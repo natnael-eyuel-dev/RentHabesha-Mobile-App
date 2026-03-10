@@ -1,49 +1,75 @@
+# RentHabesha Traditional Clothing Renting Mobile App
 
-# Title - RentHabesha Traditional Clothing Renting Mobile App
-## Group Members Name and ID
-## Section: 2
-| NAME                  | ID            |
-| ----------------------| ------------- |
-| 1. Feven Muluken      | UGR/8442/15   |
-| 2. Mekdelawit Gebre   | UGR/1386/15   |
-| 3. Natnael Eyuel      | UGR/4424/15   |
-| 4. Sifen Biyadgelgn   | UGR/4937/15   |
-| 5. Yeabsera Tilahun   | UGR/1418/12   |
-
+RentHabesha is a cross-platform mobile application designed to simplify the rental process for traditional Ethiopian clothing. The platform allows clothing owners and boutiques to list outfits for rent, while renters can browse, search, and book clothing for special occasions. Alongside its practical rental features, the project also promotes Ethiopian cultural heritage through a modern digital solution.
 
 ## Project Overview
-RentHabesha is a mobile application designed to simplify the process of renting traditional Ethiopian clothing. The app serves as a platform where clothing owners or boutiques can list their traditional outfits for rent, and renters can easily browse, search, and book outfits for special occasions. The goal of RentHabesha is to create a seamless, transparent, and efficient experience for both clothing owners and renters, while promoting and preserving Ethiopian cultural heritage.
+
+This version of RentHabesha represents the broader mobile app project built with **Flutter** and **Dart**, making it distinct from the earlier Android-focused implementation. It combines a shared mobile codebase with backend support to deliver a more complete application experience across platforms.
+
+## Team Information
+
+- **Section:** 2
+- **Group Members:**
+  - **Feven Muluken** - `UGR/8442/15`
+  - **Mekdelawit Gebre** - `UGR/1386/15`
+  - **Natnael Eyuel** - `UGR/4424/15`
+  - **Sifen Biyadgelgn** - `UGR/4937/15`
+  - **Yeabsera Tilahun** - `UGR/1418/12`
+
+## Contents
+
+- **`lib/`**: Main Flutter application source code written in Dart.
+- **`assets/`**: Images, icons, and other supporting app resources.
+- **`android/`**, **`ios/`**, **`web/`**, **`linux/`**, **`macos/`**, **`windows/`**: Platform-specific files generated and maintained by Flutter.
+- **`rent-habesha-backend/`**: Backend project directory for server-side logic and API support.
+- **`test/`**: Test files for application validation.
+- **`pubspec.yaml`**: Flutter dependencies and project metadata.
+- **`analysis_options.yaml`**: Dart and Flutter linting configuration.
+- **`README.md`**: Project overview and documentation.
 
 ## Key Features
 
-## i. Clothing Listings (CRUD):
+- **Clothing Listings (CRUD)**
+  - Create listings with photos, outfit type, size, price, and location.
+  - Browse and filter available traditional clothing items.
+  - Update listing information when details change.
+  - Delete unavailable listings.
 
-**Create**: Clothing owners or boutiques can add new clothing listings with details such as photos, type of outfit, size, price, and location.<br/>
+- **User Profiles (CRUD)**
+  - Create profiles for renters, outfit owners, and boutiques.
+  - View and manage user information.
+  - Update contact details and preferences.
+  - Delete profiles when no longer needed.
 
-**Read**: Renters can view all available clothing listings and filter them based on their preferences.<br/>
+- **Admin Dashboard (CRUD)**
+  - Manage users, listings, and app activity.
+  - Update platform records and settings.
+  - Remove listings or accounts that violate platform rules.
 
-**Update**: Clothing owners or boutiques can edit or update their clothing listings at any time.<br/>
+## Technology Stack
 
-**Delete**: Clothing owners or boutiques can remove clothing listings that are no longer available.<br/>
+- **Mobile App:** Flutter
+- **Programming Language:** Dart
+- **Backend:** JavaScript with Express
+- **Platforms:** Android, iOS, Web, Linux, macOS, Windows
 
+## Usage
 
-## ii. User Profiles (CRUD):
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/natnaeleyuel/RentHabesha-Mobile-App-Flutter.git
+   ```
+2. Open the Flutter project in **VS Code** or **Android Studio** with Flutter support installed.
+3. Install Flutter dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the app:
+   ```sh
+   flutter run
+   ```
+5. Configure and run the backend inside `rent-habesha-backend/` if server-side functionality is required.
 
-**Create**: Users (renters, clothing owners, or boutiques) can create profiles with personal information, contact details, and preferences.<br/>
+---
 
-**Read**: Users can view their own profiles.<br/>
-
-**Update**: Users can edit and update their profiles as needed.<br/>
-
-**Delete**: Users can delete their profiles if they no longer wish to use the app.<br/>
-
-
-## iii. Admin Dashboard (CRUD):
-
-**Create**: Admins can add new users (e.g., clothing owners, boutiques, or renters) manually if needed.<br/>
-
-**Read**: Admins can view all users, clothing listings, and app activity.<br/>
-
-**Update**: Admins can edit or update user profiles, clothing listings, and app settings.<br/>
-
-**Delete**: Admins can remove users or clothing listings that violate app policies.<br/>
+*Created collaboratively by the RentHabesha team, including [natnaeleyuel](https://github.com/natnaeleyuel)*
